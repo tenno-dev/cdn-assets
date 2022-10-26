@@ -19,4 +19,4 @@ jobs:
         RCLONE_CONFIG_S3_REGION: auto
         RCLONE_CONFIG_S3_ENDPOINT: ${{ secrets.RCLONE_CONFIG_S3_ENDPOINT }}
       with: 
-        args:  sync  ./  S3:testreno --exclude /.git*/**  --exclude /*/.gitignore   --progress --exclude .gitignore
+        args:  sync  ./  S3:cdn --exclude /.git*/**  --exclude /*/.gitignore   --progress --exclude .gitignore
